@@ -1,0 +1,55 @@
+{
+  "name": "yle-teletext-scraper",
+  "version": "1.0.0",
+  "description": "Retrieve teletext pages from Finnish Broadcasting Company.",
+  "main": "dist/scraper.js",
+  "author": "Rauli Laine <rauli.laine@iki.fi>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/RauliL/yle-teletext-scraper"
+  },
+  "keywords": [
+    "yle",
+    "yleisradio",
+    "teletext",
+    "scraper"
+  ],
+  "module": "dist/index.mjs",
+  "browser": "dist/index.iife.js",
+  "types": "index.d.ts",
+  "bin": {
+    "yle-teletext": "bin/yle-teletext"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "clean": "rimraf './dist'",
+    "prebuild": "$npm_execpath run clean",
+    "prepack": "env NODE_END=production $npm_execpath run build"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.d.ts",
+    "bin/yle-teletext",
+    "dist/index.js",
+    "dist/index.mjs",
+    "dist/index.iife.js"
+  ],
+  "dependencies": {
+    "cross-fetch": "^4.0.0",
+    "lodash.get": "^4.4.2",
+    "strip": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "entities": "^5.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.24.0"
+  }
+}
