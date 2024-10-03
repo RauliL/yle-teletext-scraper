@@ -1,6 +1,6 @@
 {
   "name": "yle-teletext-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Retrieve teletext pages from Finnish Broadcasting Company.",
   "main": "dist/scraper.js",
   "author": "Rauli Laine <rauli.laine@iki.fi>",
@@ -39,6 +39,7 @@
   ],
   "dependencies": {
     "cross-fetch": "^4.0.0",
+    "entities": "^5.0.0",
     "lodash.get": "^4.4.2",
     "strip": "^3.0.0"
   },
@@ -48,7 +49,6 @@
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "entities": "^5.0.0",
     "rimraf": "^6.0.1",
     "rollup": "^4.24.0"
   }
