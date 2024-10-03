@@ -12,6 +12,7 @@ export default [
     },
     external: [
       'cross-fetch',
+      'entities',
       'lodash.get',
       'strip'
     ],
@@ -27,6 +28,7 @@ export default [
     },
     external: [
       'cross-fetch',
+      'entities',
       'lodash.get',
       'strip'
     ],

@@ -1,6 +1,6 @@
 {
   "name": "yle-teletext-scraper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Retrieve teletext pages from Finnish Broadcasting Company.",
   "main": "dist/scraper.js",
   "author": "Rauli Laine <rauli.laine@iki.fi>",
